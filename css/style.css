@@ -145,23 +145,14 @@ nav .menu-btn i {
 }
 
 .container-redes {
+    margin-left: 50%;
+    width: 20%;
     margin-top: 3%;
     text-align: center;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 90%;
-}
-
-.redes .bi-github{
-    margin-left: 100%;
-}
-
-.redes .bi-github{
-    margin-left: 100%;
-}
-
-.redes .bi-linkedin{
-    margin-right: 50%;
+    gap: 10px;
 }
 
 .redes svg{
