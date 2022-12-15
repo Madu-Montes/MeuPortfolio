@@ -1,62 +1,72 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(to top black, yellow);
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(4, 4, 5, 1) 35%, rgba(56, 48, 80, 1) 100%);
     background-attachment: fixed;
 }
 
 
-nav{
+nav {
     display: flex;
     height: 80px;
     width: 100%;
-    background-color: black;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
 }
-.logo{
-	width: 100px;
+
+.logo {
+    width: 100px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     margin: 0 5px;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 25px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
+
 nav ul li a.active,
-nav ul li a:hover{
-    background: white;
+nav ul li a:hover {
+    background: #6200EE;
+    color: white;
 }
 
-nav .menu-btn i{
+nav .menu-btn i {
     color: #fff;
     cursor: pointer;
     display: none;
 }
+
 @media (max-width: 920px) {
-    nav .menu-btn i{
+    nav .menu-btn i {
         display: block;
     }
-    nav ul{
+
+    nav ul {
         position: fixed;
         top: 80px;
         left: -100%;
@@ -67,19 +77,126 @@ nav .menu-btn i{
         display: block;
         transition: all 0.3s ease;
     }
-    nav ul.open{
+
+    nav ul.open {
         left: 0;
     }
-    nav ul li{
+
+    nav ul li {
         width: 100%;
         margin: 50px 0;
     }
+
     nav ul li a {
         font-size: 23px;
     }
+
     nav ul li a.active,
-    nav ul li a:hover{
+    nav ul li a:hover {
         background: none;
         color: #f88f06;
-    }   
+    }
 }
+
+
+/*project*/
+
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90%;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.left {
+    text-align: center;
+    margin-top: 30%;
+}
+
+.left h1{
+    color: white;
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left h2{
+    color: #6200EE;
+    font-size: 40px;
+    margin-top: 3%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.left h3{
+    color: white;
+    font-weight: 200;
+}
+
+.right {
+    margin-top: 10%;
+}
+
+.ilustra-eu img {
+    margin-left: 25%;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.container-redes {
+    margin-top: 3%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90%;
+}
+
+.redes .bi-github{
+    margin-left: 100%;
+}
+
+.redes .bi-github{
+    margin-left: 100%;
+}
+
+.redes .bi-linkedin{
+    margin-right: 50%;
+}
+
+.redes svg{
+    color: white;
+}
+
+/*Sobre */
+
+.title{ 
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.right h1{
+    color: white;
+    font-weight: 200;
+}
+
+.right p{
+    margin-top: 3%;
+    color: white;
+    font-size: 18px;
+}
+
+.right .btn{
+    margin-top: 5%;
+    background-color: black;
+    border-radius: 15px;
+    border: #fff;
+    font-size: 18px;
+    float: right;
+    margin-right: 2%;
+}
+
+
+
