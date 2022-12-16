@@ -101,7 +101,7 @@ nav .menu-btn i {
 
 /*project*/
 
-.container {
+.container-grid {
     padding: 20px;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -112,13 +112,16 @@ nav .menu-btn i {
 
 .left {
     text-align: center;
-    margin-top: 30%;
 }
 
 .left h1{
     color: white;
     font-size: 55px;
     font-family: 'Poppins', sans-serif;
+}
+
+.title-home{
+    margin-top: 25%;
 }
 
 .left h2{
@@ -132,6 +135,11 @@ nav .menu-btn i {
 .left h3{
     color: white;
     font-weight: 200;
+}
+
+.eu img{
+    width: 70%;
+
 }
 
 .right {
@@ -188,6 +196,73 @@ nav .menu-btn i {
     float: right;
     margin-right: 2%;
 }
+
+/* Habilidades */
+
+#habilidades{
+    text-align: left; /* Definir dps como ficara esse texto */
+}
+
+.left2 p{
+    color: white;
+    font-size: 18px;
+}
+
+.container-grid .habilidades {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 90%;
+    gap: 10px;
+    margin-bottom: 10%;
+}
+
+.container-grid .habilidades img{
+    width: 150px;
+    margin-top: 5%;
+}
+
+
+.container-projects {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+    margin-bottom: 15%;
+}
+
+.card{
+    margin-bottom: -100px;
+}
+
+.card .card-img-top{
+    background-color: #6200EE;
+}
+
+.card .btn-dark{
+    background-color: black;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .btn-git{
+    font-size: 18px;
+    background-color: #6200EE;
+    color: white;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+.container .btn-git:hover{
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
 
 
 
