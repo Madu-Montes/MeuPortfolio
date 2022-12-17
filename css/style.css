@@ -147,9 +147,9 @@ nav .menu-btn i {
 }
 
 .animacao-home{
-    margin-left: 5%;
-    width: 350px;
-    height: 350px;
+    margin-left: 12%;
+    width: 330px;
+    height: 330px;
     border: 2px solid #6200EE;
     border-top: 4px solid #6216cc;
     border-bottom: 1px solid #703abb;
@@ -159,8 +159,8 @@ nav .menu-btn i {
 
 .animacao-home::after{
     content: "";
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     border: 2px solid #0cc015;
     border-top: 4px solid #0bb914;
    /* border-radius: 50%; Talvez eu tire*/
@@ -186,21 +186,22 @@ nav .menu-btn i {
 
 .ilustra-eu img {
     padding: 10px;
-    margin-left: 15%;
-    width: 60%;
+    margin-left: 31%;
+    width: 320px;
     border-radius: 50%;
 }
 
 .container-redes {
-    margin-left: 50%;
+    margin-left: 45%;
     width: 20%;
-    margin-top: 3%;
+    margin-top: 10%;
     text-align: center;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 90%;
     gap: 10px;
 }
+
 
 .redes svg{
     color: white;
