@@ -146,9 +146,48 @@ nav .menu-btn i {
     margin-top: 10%;
 }
 
+.animacao-home{
+    margin-left: 5%;
+    width: 350px;
+    height: 350px;
+    border: 2px solid #6200EE;
+    border-top: 4px solid #6216cc;
+    border-bottom: 1px solid #703abb;
+    animation: animacao 5s linear infinite;
+    position: absolute;
+}
+
+.animacao-home::after{
+    content: "";
+    width: 350px;
+    height: 350px;
+    border: 2px solid #0cc015;
+    border-top: 4px solid #0bb914;
+   /* border-radius: 50%; Talvez eu tire*/
+    border-bottom: 1px solid #05ff12;
+    animation: animacao 5s linear infinite;
+    position: absolute;
+}
+
+
+
+@keyframes animacao{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+.ilustra-eu{
+    margin-bottom: 15%;
+}
+
 .ilustra-eu img {
-    margin-left: 25%;
-    width: 70%;
+    padding: 10px;
+    margin-left: 15%;
+    width: 60%;
     border-radius: 50%;
 }
 
