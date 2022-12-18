@@ -13,6 +13,7 @@ body {
     background-attachment: fixed;
 }
 
+/*Menu*/
 
 nav {
     display: flex;
@@ -61,6 +62,8 @@ nav .menu-btn i {
     display: none;
 }
 
+/*responsividade do menu*/
+
 @media (max-width: 920px) {
     nav .menu-btn i {
         display: block;
@@ -97,7 +100,6 @@ nav .menu-btn i {
         color: #f88f06;
     }
 }
-
 
 /*project*/
 
@@ -137,11 +139,6 @@ nav .menu-btn i {
     font-weight: 200;
 }
 
-.eu img{
-    width: 70%;
-
-}
-
 .right {
     margin-top: 10%;
 }
@@ -168,8 +165,6 @@ nav .menu-btn i {
     animation: animacao 5s linear infinite;
     position: absolute;
 }
-
-
 
 @keyframes animacao{
     from{
@@ -202,7 +197,6 @@ nav .menu-btn i {
     gap: 10px;
 }
 
-
 .redes svg{
     color: white;
 }
@@ -214,6 +208,10 @@ nav .menu-btn i {
     color: white;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.eu img{
+    width: 70%;
 }
 
 .right h1{
@@ -279,6 +277,8 @@ nav .menu-btn i {
     margin-top: 5%;
 }
 
+
+/*Projetos*/
 
 .container-projects {
     display: grid;
