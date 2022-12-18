@@ -150,7 +150,7 @@ nav .menu-btn i {
     border: 2px solid #6200EE;
     border-top: 4px solid #6216cc;
     border-bottom: 1px solid #703abb;
-    animation: animacao 5s linear infinite;
+    animation: animacao 10s linear infinite;
     position: absolute;
 }
 
@@ -162,7 +162,7 @@ nav .menu-btn i {
     border-top: 4px solid #0bb914;
    /* border-radius: 50%; Talvez eu tire*/
     border-bottom: 1px solid #05ff12;
-    animation: animacao 5s linear infinite;
+    animation: animacao 10s linear infinite;
     position: absolute;
 }
 
@@ -199,6 +199,19 @@ nav .menu-btn i {
 
 .redes svg{
     color: white;
+}
+
+.bi-github:hover{
+    box-shadow: 0px 0px 35px #6200EE, 0px 0px 15px #6300eed0 inset;
+    text-shadow: 0 px 0px 10px #6200EE, 0px 0px 3px #6300eed0;
+    border-radius: 50px;
+    transition: box-shadow 0.1s;
+}
+
+.bi-linkedin:hover{
+    box-shadow: 0px 0px 35px #6200EE, 0px 0px 15px #6300eed0 inset;
+    text-shadow: 0 px 0px 10px #6200EE, 0px 0px 3px #6300eed0;
+    transition: box-shadow 0.1s;
 }
 
 /*Sobre */
