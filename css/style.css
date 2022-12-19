@@ -240,22 +240,15 @@ nav .menu-btn i {
 
 .right .btn{
     margin-top: 5%;
-    background-color: black;
-    border-radius: 15px;
-    border: #fff;
-    font-size: 18px;
+    border: 1px solid rgba(131, 122, 122, 0.747);
+    background-color: transparent;
+    color: rgba(131, 122, 122, 0.747);
+    border-radius: 10px;
+    font-size: 16px;
     float: right;
     margin-right: 2%;
-}
-
-.right .btn:hover{
-    font-family:Arial, Helvetica, sans-serif;
-    outline: none;
-    border-radius: 15px;
-    background: none;
-    transition: box-shadow 0.1s;
-    color: #6200EE;
-    border: 4px solid #6200EE;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
 }
 
 .right .btn:hover{
@@ -271,24 +264,47 @@ nav .menu-btn i {
     text-align: left; /* Definir dps como ficara esse texto */
 }
 
+.left2{
+    margin-top: 10%;
+}
+
 .left2 p{
     color: white;
     font-size: 18px;
 }
 
 .container-grid .habilidades {
+    height: 500px;
     padding: 20px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 90%;
     gap: 10px;
-    margin-bottom: 10%;
 }
 
 .container-grid .habilidades img{
-    width: 150px;
     margin-top: 5%;
+    width: 150px;
 }
+
+#css{
+    margin-top: 7px;
+}
+
+#bootstrap{
+    margin-top: 7px;
+}
+
+#js{
+    margin-top: 7px;
+}
+
+#php{
+    margin-top: 7px;
+}
+
+
+
 
 
 /*Projetos*/
