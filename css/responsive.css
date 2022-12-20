@@ -44,7 +44,7 @@
 
 @media (min-width: 360px) and (max-width: 389px) {
     nav{
-        margin-left: 50%;
+        margin-left: 45%;
     }
     
     .container-grid {
@@ -140,6 +140,25 @@
     #php{
         margin-top: 5px;
     }
+
+    .container .projects {
+        margin-left: 25%;
+        display: block;
+    }
+
+    .projects .card{
+        margin-bottom: 20px;
+    }
+
+    .container .btn-git{
+        font-size: 20px;
+        margin-left: 50%;
+        margin-bottom: 10%;
+    }
+
+    .footer{
+        width: 150%;
+    }    
     
  
 }
