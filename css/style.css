@@ -12,6 +12,7 @@ body {
     background: rgb(0, 0, 0);
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(4, 4, 5, 1) 35%, rgba(56, 48, 80, 1) 100%);
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /*Menu*/
@@ -220,9 +221,9 @@ nav .menu-btn i {
 .title{ 
     text-align: center;
     color: white;
-    margin-top: 5%;
     margin-bottom: 5%;
     font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .eu img{
@@ -263,8 +264,8 @@ nav .menu-btn i {
 /* Habilidades */
   
 #habilidades{
-    text-align: left; /* Definir dps como ficara esse texto */
-    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+    margin-top: 5%;
 }
 
 .left2{
@@ -282,7 +283,7 @@ nav .menu-btn i {
     padding: 20px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 90%;
+    grid-template-rows: 50%;
     gap: 10px;
 }
 
@@ -312,33 +313,46 @@ nav .menu-btn i {
     margin-top: 7px;
 }
 
-
-
-
-
 /*Projetos*/
 
-.container-projects {
+.container .projects {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
     gap: 10px;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
+    text-align: center;
 }
 
-.card{
-    margin-bottom: -100px;
+.projects .card{
+    padding: 10px;
+    width: 350px;
+    height: 350px;
 }
 
-.card .card-img-top{
-    background-color: #6200EE;
+.projects img{
+    background-color: #703abb;
+    width: 350px;
+    height: 200px;
 }
 
-.card .btn-dark{
+.card h3{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+.card-body{
+    margin-top: 10px;
+}
+
+.card a{
     background-color: black;
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 5px;
+}
+
+.card a:hover{
+    box-shadow: 0px 0px 35px #6200EE, 0px 0px 15px #6300eed0 inset;
+    text-shadow: 0 px 0px 10px #6200EE, 0px 0px 3px #6300eed0;
+    transition: box-shadow 0.1s;
 }
 
 .container .btn-git{
@@ -357,6 +371,36 @@ nav .menu-btn i {
     font-size: 20px;
     transition: 0.5s;
 }
+
+/*footer */
+
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 220px;
+}
+
+.img-footer{
+    color: rgba(255, 255, 255, 0.603);
+    text-align: center;
+}
+
+.img-footer img{
+    width: 130px;
+    margin-top: 5px;
+}
+
+.voltartopo a{
+    color: #703abb;
+    text-decoration: none;
+}
+
+.voltartopo a:hover{
+    color: #05ff12;
+}
+
+
+
 
 
 
