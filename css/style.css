@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -221,6 +222,7 @@ nav .menu-btn i {
     color: white;
     margin-top: 5%;
     margin-bottom: 5%;
+    font-size: 50px;
 }
 
 .eu img{
@@ -259,13 +261,15 @@ nav .menu-btn i {
 }
 
 /* Habilidades */
-
+  
 #habilidades{
     text-align: left; /* Definir dps como ficara esse texto */
+    font-family: 'Bebas Neue', cursive;
 }
 
 .left2{
     margin-top: 10%;
+    margin-left: 10%;
 }
 
 .left2 p{
@@ -285,6 +289,11 @@ nav .menu-btn i {
 .container-grid .habilidades img{
     margin-top: 5%;
     width: 150px;
+}
+
+.container-grid .habilidades img:hover{
+    width: 170px;
+    transition: 0.5s;
 }
 
 #css{
