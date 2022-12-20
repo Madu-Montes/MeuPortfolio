@@ -48,7 +48,6 @@
     }
     
     .container-grid {
-        background-color: deeppink;
         width: 100%;
         padding: 20px;
         display: block;
@@ -113,18 +112,33 @@
     }
 
     .container-grid .habilidades {
-        margin-left: -0%;
-        background-color: darkgoldenrod;
-        height: 500px;
+        margin-left: -7%;
+        height: 250px;
         padding: 20px;
         display: grid;
         gap: 10px;
     }
 
     .container-grid .habilidades img{
-        margin-top: 5%;
+        margin-left: -25%;
         padding: 10px;
-        width: 120px;
+        width: 100px;
+    }
+
+    #css{
+        margin-top: 2px;
+    }
+    
+    #bootstrap{
+        margin-top: 2px;
+    }
+    
+    #js{
+        margin-top: 5px;
+    }
+    
+    #php{
+        margin-top: 5px;
     }
     
  
