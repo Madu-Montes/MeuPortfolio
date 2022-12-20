@@ -44,7 +44,7 @@
 
 @media (min-width: 360px) and (max-width: 389px) {
     nav{
-        margin-left: 45%;
+        margin-left: 0%;
     }
     
     .container-grid {
@@ -52,7 +52,7 @@
         padding: 20px;
         display: block;
         gap: 10px;
-        margin-left: 30%;
+        margin-left: 0%;
         margin-bottom: 5%;
     }
 
@@ -84,15 +84,12 @@
         margin-left: 35%;
         width: 20%;
         margin-top: 27%;
-        text-align: center;
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 90%;
         gap: 30px;
     }
 
-    .title{
-        margin-left: 60%;
+    .left2{
+        margin-left: 0%;
     }
 
     .right .btn{
@@ -142,22 +139,24 @@
     }
 
     .container .projects {
-        margin-left: 25%;
+        margin-left: 0%;
         display: block;
     }
 
     .projects .card{
         margin-bottom: 20px;
+        margin-left: 5%;
+        width: 300px;
     }
 
     .container .btn-git{
         font-size: 20px;
-        margin-left: 50%;
+        margin-left: 20%;
         margin-bottom: 10%;
     }
 
     .footer{
-        width: 150%;
+        width: 100%;
     }    
     
  
