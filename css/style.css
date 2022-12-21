@@ -141,12 +141,14 @@ nav .menu-btn i {
     font-weight: 200;
 }
 
-.right {
+.right-home {
     margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .animacao-home{
-    margin-left: 12%;
     width: 330px;
     height: 330px;
     border: 2px solid #6200EE;
@@ -179,12 +181,14 @@ nav .menu-btn i {
 }
 .ilustra-eu{
     margin-bottom: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ilustra-eu img {
     padding: 10px;
-    margin-left: 31%;
-    width: 320px;
+    width: 330px;
     border-radius: 50%;
 }
 
@@ -196,7 +200,7 @@ nav .menu-btn i {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 90%;
-    gap: 10px;
+    gap: 20px;
 }
 
 .redes svg{
