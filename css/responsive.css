@@ -197,8 +197,96 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    
+    body{
+        overflow-x: hidden;
+    }
 
+    .title-home h1{
+        font-size: 55px;
+    }
+
+    .titles h2{
+        font-size: 40px;
+    }
+
+    .titles h3{
+        font-size: 20px;
+    }
+
+    .animacao-home{
+        width: 230px;
+        height: 230px;
+    }
+    
+    .animacao-home::after{
+        width: 230px;
+        height: 230px;
+    }
+    
+    .ilustra-eu{
+        margin-bottom: 25%;
+    }
+    
+    .ilustra-eu img {
+        width: 230px;
+    }
+
+    .container-redes {
+        margin-left: 30%;
+    }
+
+    .container-redes svg{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .title{
+        font-size: 60px;
+    }
+
+    .eu img{
+        margin-top: 25%;
+        width: 70%;
+    }
+
+    .right p{
+        font-size: 20px;
+    }
+
+    .right .btn{
+        margin-top: 9%;
+    }
+
+    .left2 p{
+        font-size: 20px;
+    }
+
+    .container-grid .habilidades img{
+        width: 110px;
+    }
+    
+    .container-grid .habilidades img:hover{
+        width: 130px;
+    }
+
+    #css{
+        margin-top: 5px;
+    }
+    
+    #bootstrap{
+        margin-top: 5px;
+    }
+
+    .container .projects {
+        gap: 50px;
+    }
+
+    .projects .card{
+        margin-left: -30%;
+        width: 270px;
+        height: 325px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
