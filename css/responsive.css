@@ -290,10 +290,204 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .title-home h1{
+        font-size: 45px;
+    }
+
+    .titles h2{
+        font-size: 30px;
+    }
+
+    .titles h3{
+        font-size: 20px;
+    }
+
+    .animacao-home{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .animacao-home::after{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .ilustra-eu{
+        margin-bottom: 25%;
+    }
+    
+    .ilustra-eu img {
+        width: 200px;
+    }
+
+    .container-redes {
+        margin-left: 25%;
+    }
+
+    .container-redes svg{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .title{
+        font-size: 60px;
+    }
+
+    .eu img{
+        margin-top: 50%;
+        width: 90%;
+    }
+
+    .right p{
+        font-size: 18px;
+    }
+
+    .right .btn{
+        margin-top: 9%;
+    }
+
+    .left2 p{
+        font-size: 18px;
+    }
+
+    .container-grid .habilidades {
+        height: 400px;
+        gap: 20px;
+    }
+
+    .container-grid .habilidades img{
+        width: 90px;
+        margin-left: -30px;
+    }
+    
+    .container-grid .habilidades img:hover{
+        width: 130px;
+    }
+
+    #css{
+        margin-top: 5px;
+    }
+    
+    #bootstrap{
+        margin-top: 5px;
+    }
+
+    .container .projects {
+        width: 100%;
+        display: block;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .projects .card{
+        margin-left: 15%;
+        margin-bottom: 30px;
+        width: 350px;
+        height: 375px;
+    }
     
 }
 
 @media (min-width: 414px) and (max-width: 575px) {
+    body{
+        overflow-x: hidden;
+    }
+    .container-grid {
+        display: block;
+    }
+
+    .title-home{
+        margin-top: 0%;
+    }
+
+    .right-home {
+        margin-left: 25%;
+    }
+
+    .animacao-home{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .animacao-home::after{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .ilustra-eu{
+        margin-bottom: 15%;
+    }
+    
+    .ilustra-eu img {
+        width: 200px;
+    }
+
+    .container-redes {
+        margin-left: 15%;
+    }
+
+    .title{
+        font-size: 60px;
+    }
+
+    .eu img{
+        margin-top: 0%;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .right p{
+        font-size: 18px;
+    }
+
+    .right .btn{
+        margin-top: 3%;
+        float: none;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .left2{
+        width: 100%;
+        margin-left: -0%;
+    }
+
+    #habilidades{
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .left2 p{
+        font-size: 18px;
+    }
+
+    .container-grid .habilidades {
+        height: 300px;
+        gap: 20px;
+    }
+
+    .container-grid .habilidades img{
+        width: 90px;
+        margin-left: -15px;
+    }
+    
+    .container-grid .habilidades img:hover{
+        width: 110px;
+    }
+
+    .container .projects {
+        width: 100%;
+        display: block;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .projects .card{
+        margin-left: 5%;
+    }
     
 
 }
@@ -468,7 +662,7 @@
     }
 
     .right .btn{
-        margin-top: 10%;
+        margin-top: 0%;
         width: 50%;
         float: none;
         margin-left: auto;
@@ -532,5 +726,5 @@
 
     .footer{
         width: 100%;
-    }    
+    }   
 }
