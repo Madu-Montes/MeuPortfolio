@@ -2,10 +2,75 @@
     body{
         overflow-x: hidden;
     }
+    .container-grid {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 90%;
+        gap: 10px;
+        margin-bottom: 5%;
+    }
+
+    .title-home h1{
+        font-size: 65px;
+    }
+
+    .titles h2, h3{
+        font-size: 50px;
+    }
 
     .ilustra-eu img {
-        display: none;
+        padding: 10px;
+        margin-left: 37%;
+        width: 320px;
+        border-radius: 50%;
     }
+
+    .animacao-home{
+        margin-left: 12%;
+        width: 350px;
+        height: 350px;
+    }
+
+    .animacao-home::after{
+        width: 350px;
+        height: 350px;
+    }
+
+    .ilustra-eu{
+        margin-bottom: 15%;
+    }
+    
+    .ilustra-eu img {
+        margin-top: 10px;
+        margin-left: 38%;
+        width: 330px;
+    }
+
+    .container-redes {
+        margin-left: 53%;
+    }
+
+    .title{
+        font-size: 70px;
+    }
+
+    .right p{
+        font-size: 22px;
+    }
+
+    .right .btn{
+        margin-top: 9%;
+    }
+
+    .left2 p{
+        font-size: 22px;
+    }
+
+    .projects .card{
+        margin-left: 7%;
+    }
+   
 }
 
 @media (min-width: 1400px) and (max-width: 1536px) {
@@ -39,6 +104,121 @@
 }
 
 @media (min-width: 390px) and (max-width: 413px) {
+    nav{
+        margin-left: 0%;
+    }
+    
+    .container-grid {
+        width: 100%;
+        padding: 20px;
+        display: block;
+        gap: 10px;
+        margin-left: 0%;
+        margin-bottom: 5%;
+    }
+
+    .ilustra-eu{
+        margin-bottom: 15%;
+    }
+    
+    .ilustra-eu img {
+        padding: 10px;
+        margin-left: 0%;
+        margin-top: 50px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    .animacao-home{
+        margin-left: 0%;
+        margin-top: 50px;
+        width: 310px;
+        height: 310px;
+    }
+    
+    .animacao-home::after{
+        width: 310px;
+        height: 310px;
+    }
+
+    .container-redes {
+        margin-left: 35%;
+        width: 20%;
+        margin-top: 27%;
+        display: grid;
+        gap: 30px;
+    }
+
+    .left2{
+        margin-left: 0%;
+    }
+
+    .right .btn{
+        margin-top: 10%;
+        width: 50%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #habilidades{
+        text-align: center;
+        margin-top: 5%;
+        width: 100%;
+        margin-left: -5%;
+    }
+
+    .container-grid .habilidades {
+        margin-left: -7%;
+        height: 250px;
+        padding: 20px;
+        display: grid;
+        gap: 10px;
+    }
+
+    .container-grid .habilidades img{
+        margin-left: -25%;
+        padding: 10px;
+        width: 100px;
+    }
+
+    #css{
+        margin-top: 2px;
+    }
+    
+    #bootstrap{
+        margin-top: 2px;
+    }
+    
+    #js{
+        margin-top: 5px;
+    }
+    
+    #php{
+        margin-top: 5px;
+    }
+
+    .container .projects {
+        margin-left: 0%;
+        display: block;
+    }
+
+    .projects .card{
+        margin-bottom: 20px;
+        margin-left: 5%;
+        width: 300px;
+    }
+
+    .container .btn-git{
+        font-size: 20px;
+        margin-left: 20%;
+        margin-bottom: 10%;
+    }
+
+    .footer{
+        width: 100%;
+    }    
     
 }
 
@@ -158,6 +338,4 @@
     .footer{
         width: 100%;
     }    
-    
- 
 }
