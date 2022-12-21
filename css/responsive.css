@@ -498,11 +498,11 @@
     }
     
     .container-grid {
-        background-color: darkolivegreen;
         width: 90%;
         padding: 20px;
         display: block;
         margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 5%;
     }
 
@@ -520,7 +520,6 @@
     }
 
     .right-home{
-        background-color: crimson;
         width: 300px;
     }
 
@@ -625,12 +624,11 @@
     }
     
     .container-grid {
-        background-color: chocolate;
-        width: 100%;
+        width: 90%;
         padding: 20px;
         display: block;
-        gap: 10px;
-        margin-left: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 5%;
     }
 
@@ -640,26 +638,31 @@
     
     .ilustra-eu img {
         padding: 10px;
-        margin-left: 0%;
+        margin-left: 10%;
         margin-top: 50px;
-        width: 260px;
+        width: 70%;
+        height: 70%;
         border-radius: 50%;
     }
 
+    .right-home{
+        width: 300px;
+    }
+
     .animacao-home{
-        margin-left: 0%;
-        margin-top: 50px;
-        width: 260px;
-        height: 260px;
+        margin-top: 45px;
+        width: 230px;
+        height: 230px;
+        margin-left: 25px;
     }
     
     .animacao-home::after{
-        width: 260px;
-        height: 260px;
+        width: 230px;
+        height: 230px;
     }
 
     .container-redes {
-        margin-left: 35%;
+        margin-left: 30%;
         width: 20%;
         margin-top: 27%;
         display: grid;
@@ -687,7 +690,8 @@
     }
 
     .container-grid .habilidades {
-        margin-left: -7%;
+        width: 90%;
+        margin-left: -10%;
         height: 250px;
         padding: 20px;
         display: grid;
@@ -724,16 +728,17 @@
     .projects .card{
         margin-bottom: 20px;
         margin-left: 5%;
-        width: 300px;
+        width: 90%;
     }
 
     .container .btn-git{
+        width: 50%;
         font-size: 20px;
-        margin-left: 20%;
+        margin-left: 25%;
         margin-bottom: 10%;
     }
 
     .footer{
         width: 100%;
-    }   
+    }    
 }
