@@ -498,11 +498,11 @@
     }
     
     .container-grid {
-        width: 100%;
+        background-color: darkolivegreen;
+        width: 90%;
         padding: 20px;
         display: block;
-        gap: 10px;
-        margin-left: 0%;
+        margin-left: 5%;
         margin-bottom: 5%;
     }
 
@@ -512,22 +512,28 @@
     
     .ilustra-eu img {
         padding: 10px;
-        margin-left: 0%;
+        margin-left: 15%;
         margin-top: 50px;
-        width: 300px;
+        width: 70%;
+        height: 70%;
         border-radius: 50%;
     }
 
+    .right-home{
+        background-color: crimson;
+        width: 300px;
+    }
+
     .animacao-home{
-        margin-left: 0%;
         margin-top: 50px;
-        width: 310px;
-        height: 310px;
+        width: 230px;
+        height: 230px;
+        margin-left: 35px;
     }
     
     .animacao-home::after{
-        width: 310px;
-        height: 310px;
+        width: 230px;
+        height: 230px;
     }
 
     .container-redes {
@@ -559,7 +565,8 @@
     }
 
     .container-grid .habilidades {
-        margin-left: -7%;
+        width: 90%;
+        margin-left: 0%;
         height: 250px;
         padding: 20px;
         display: grid;
@@ -596,12 +603,13 @@
     .projects .card{
         margin-bottom: 20px;
         margin-left: 5%;
-        width: 300px;
+        width: 90%;
     }
 
     .container .btn-git{
+        width: 50%;
         font-size: 20px;
-        margin-left: 20%;
+        margin-left: 25%;
         margin-bottom: 10%;
     }
 
@@ -617,6 +625,7 @@
     }
     
     .container-grid {
+        background-color: chocolate;
         width: 100%;
         padding: 20px;
         display: block;
@@ -633,20 +642,20 @@
         padding: 10px;
         margin-left: 0%;
         margin-top: 50px;
-        width: 300px;
+        width: 260px;
         border-radius: 50%;
     }
 
     .animacao-home{
         margin-left: 0%;
         margin-top: 50px;
-        width: 310px;
-        height: 310px;
+        width: 260px;
+        height: 260px;
     }
     
     .animacao-home::after{
-        width: 310px;
-        height: 310px;
+        width: 260px;
+        height: 260px;
     }
 
     .container-redes {
