@@ -197,299 +197,436 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    body{
-        overflow-x: hidden;
+    nav{
+        margin-left: 0%;
+    }
+    
+    .container-grid {
+        width: 90%;
+        padding: 20px;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .title-home h1{
+        font-size: 65px;
+    }
+
+    .titles h2, h3{
+        font-size: 55px;
+    }
+
+    .ilustra-eu{
+        margin-bottom: 15%;
+    }
+    
+    .ilustra-eu img {
+        padding: 10px;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .right-home{
+        width: 300px;
+    }
+
+    .animacao-home{
+        margin-top: 50px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .animacao-home::after{
+        width: 300px;
+        height: 300px;
+    }
+
+    .container-redes {
+        margin-left: 35%;
+        width: 20%;
+        margin-top: 27%;
+        display: grid;
+        gap: 30px;
+    }
+
+    .left2{
+        margin-left: 0%;
+    }
+
+    .right .btn{
+        margin-top: 5%;
+        width: 40%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .eu img{
+        width: 70%;
+        margin-bottom: 10%;
+    }
+
+    #habilidades{
+        text-align: center;
+        margin-top: 5%;
+        width: 100%;
+        margin-left: -5%;
+    }
+
+    .container-grid .habilidades {
+        background-color: chocolate;
+        width: 90%;
+        margin-left: 0%;
+        height: 250px;
+        padding: 20px;
+        display: grid;
+        gap: 10px;
+    }
+
+    .container-grid .habilidades img{
+        margin-left: -25%;
+        padding: 10px;
+        width: 100px;
+    }
+
+    #css{
+        margin-top: 2px;
+    }
+    
+    #bootstrap{
+        margin-top: 2px;
+    }
+    
+    #js{
+        margin-top: 5px;
+    }
+    
+    #php{
+        margin-top: 5px;
+    }
+
+    .container .projects {
+        margin-left: 0%;
+        display: block;
+    }
+
+    .projects .card{
+        margin-bottom: 20px;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .projects img{
+        background-color: #703abb;
+        width: 100%;
+        height: 200px;
+    }
+
+    .container .btn-git{
+        width: 50%;
+        font-size: 20px;
+        margin-left: 25%;
+        margin-bottom: 10%;
+    }
+
+    .footer{
+        width: 100%;
+    }    
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    nav{
+        margin-left: 0%;
+    }
+    
+    .container-grid {
+        width: 90%;
+        padding: 20px;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .title-home h1{
+        font-size: 65px;
+    }
+
+    .titles h2, h3{
+        font-size: 55px;
+    }
+
+    .ilustra-eu{
+        margin-bottom: 15%;
+    }
+    
+    .ilustra-eu img {
+        padding: 10px;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .right-home{
+        width: 300px;
+    }
+
+    .animacao-home{
+        margin-top: 50px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .animacao-home::after{
+        width: 300px;
+        height: 300px;
+    }
+
+    .container-redes {
+        margin-left: 35%;
+        width: 20%;
+        margin-top: 27%;
+        display: grid;
+        gap: 30px;
+    }
+
+    .left2{
+        margin-left: 0%;
+    }
+
+    .right .btn{
+        margin-top: 5%;
+        width: 40%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .eu img{
+        width: 70%;
+        margin-bottom: 10%;
+    }
+
+    #habilidades{
+        text-align: center;
+        margin-top: 5%;
+        width: 100%;
+        margin-left: -5%;
+    }
+
+    .container-grid .habilidades {
+        background-color: chocolate;
+        width: 90%;
+        margin-left: 0%;
+        height: 250px;
+        padding: 20px;
+        display: grid;
+        gap: 10px;
+    }
+
+    .container-grid .habilidades img{
+        margin-left: -25%;
+        padding: 10px;
+        width: 100px;
+    }
+
+    #css{
+        margin-top: 2px;
+    }
+    
+    #bootstrap{
+        margin-top: 2px;
+    }
+    
+    #js{
+        margin-top: 5px;
+    }
+    
+    #php{
+        margin-top: 5px;
+    }
+
+    .container .projects {
+        margin-left: 0%;
+        display: block;
+    }
+
+    .projects .card{
+        margin-bottom: 20px;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .projects img{
+        background-color: #703abb;
+        width: 100%;
+        height: 200px;
+    }
+
+    .container .btn-git{
+        width: 50%;
+        font-size: 20px;
+        margin-left: 25%;
+        margin-bottom: 10%;
+    }
+
+    .footer{
+        width: 100%;
+    }    
+    
+}
+
+@media (min-width: 414px) and (max-width: 575px) {
+    nav{
+        margin-left: 0%;
+    }
+    
+    .container-grid {
+        width: 90%;
+        padding: 20px;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
     }
 
     .title-home h1{
         font-size: 55px;
     }
 
-    .titles h2{
+    .titles h2, h3{
         font-size: 40px;
     }
 
-    .titles h3{
-        font-size: 20px;
-    }
-
-    .animacao-home{
-        width: 230px;
-        height: 230px;
-    }
-    
-    .animacao-home::after{
-        width: 230px;
-        height: 230px;
-    }
-    
-    .ilustra-eu{
-        margin-bottom: 25%;
-    }
-    
-    .ilustra-eu img {
-        width: 230px;
-    }
-
-    .container-redes {
-        margin-left: 30%;
-    }
-
-    .container-redes svg{
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-    }
-
-    .title{
-        font-size: 60px;
-    }
-
-    .eu img{
-        margin-top: 25%;
-        width: 70%;
-    }
-
-    .right p{
-        font-size: 20px;
-    }
-
-    .right .btn{
-        margin-top: 9%;
-    }
-
-    .left2 p{
-        font-size: 20px;
-    }
-
-    .container-grid .habilidades img{
-        width: 110px;
-    }
-    
-    .container-grid .habilidades img:hover{
-        width: 130px;
-    }
-
-    #css{
-        margin-top: 5px;
-    }
-    
-    #bootstrap{
-        margin-top: 5px;
-    }
-
-    .container .projects {
-        gap: 50px;
-    }
-
-    .projects .card{
-        margin-left: -30%;
-        width: 270px;
-        height: 325px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    body{
-        overflow-x: hidden;
-    }
-
-    .title-home h1{
-        font-size: 45px;
-    }
-
-    .titles h2{
-        font-size: 30px;
-    }
-
-    .titles h3{
-        font-size: 20px;
-    }
-
-    .animacao-home{
-        width: 200px;
-        height: 200px;
-    }
-    
-    .animacao-home::after{
-        width: 200px;
-        height: 200px;
-    }
-    
-    .ilustra-eu{
-        margin-bottom: 25%;
-    }
-    
-    .ilustra-eu img {
-        width: 200px;
-    }
-
-    .container-redes {
-        margin-left: 25%;
-    }
-
-    .container-redes svg{
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-    }
-
-    .title{
-        font-size: 60px;
-    }
-
-    .eu img{
-        margin-top: 50%;
-        width: 90%;
-    }
-
-    .right p{
-        font-size: 18px;
-    }
-
-    .right .btn{
-        margin-top: 9%;
-    }
-
-    .left2 p{
-        font-size: 18px;
-    }
-
-    .container-grid .habilidades {
-        height: 400px;
-        gap: 20px;
-    }
-
-    .container-grid .habilidades img{
-        width: 90px;
-        margin-left: -30px;
-    }
-    
-    .container-grid .habilidades img:hover{
-        width: 130px;
-    }
-
-    #css{
-        margin-top: 5px;
-    }
-    
-    #bootstrap{
-        margin-top: 5px;
-    }
-
-    .container .projects {
-        width: 100%;
-        display: block;
-        margin-bottom: 5%;
-        text-align: center;
-    }
-    .projects .card{
-        margin-left: 15%;
-        margin-bottom: 30px;
-        width: 350px;
-        height: 375px;
-    }
-    
-}
-
-@media (min-width: 414px) and (max-width: 575px) {
-    body{
-        overflow-x: hidden;
-    }
-    .container-grid {
-        display: block;
-    }
-
-    .title-home{
-        margin-top: 0%;
-    }
-
-    .right-home {
-        margin-left: 25%;
-    }
-
-    .animacao-home{
-        width: 200px;
-        height: 200px;
-    }
-    
-    .animacao-home::after{
-        width: 200px;
-        height: 200px;
-    }
-    
     .ilustra-eu{
         margin-bottom: 15%;
     }
     
     .ilustra-eu img {
-        width: 200px;
+        padding: 10px;
+        margin-top: 50px;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .right-home{
+        width: 300px;
+    }
+
+    .animacao-home{
+        margin-left: 20px;
+        margin-top: 50px;
+        width: 270px;
+        height: 270px;
+    }
+    
+    .animacao-home::after{
+        width: 270px;
+        height: 270px;
     }
 
     .container-redes {
-        margin-left: 15%;
-    }
-
-    .title{
-        font-size: 60px;
-    }
-
-    .eu img{
-        margin-top: 0%;
-        margin-bottom: 10px;
-        width: 100%;
-    }
-
-    .right p{
-        font-size: 18px;
-    }
-
-    .right .btn{
-        margin-top: 3%;
-        float: none;
-        width: 50%;
-        margin-left: 25%;
+        margin-left: 35%;
+        width: 20%;
+        margin-top: 27%;
+        display: grid;
+        gap: 30px;
     }
 
     .left2{
-        width: 100%;
-        margin-left: -0%;
+        margin-left: 0%;
+    }
+
+    .right .btn{
+        margin-top: 5%;
+        width: 40%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .eu img{
+        width: 70%;
+        margin-bottom: 10%;
     }
 
     #habilidades{
         text-align: center;
         margin-top: 5%;
-    }
-
-    .left2 p{
-        font-size: 18px;
+        width: 100%;
+        margin-left: -5%;
     }
 
     .container-grid .habilidades {
-        height: 300px;
-        gap: 20px;
+        background-color: chocolate;
+        width: 90%;
+        margin-left: 0%;
+        height: 250px;
+        padding: 20px;
+        display: grid;
+        gap: 10px;
     }
 
     .container-grid .habilidades img{
-        width: 90px;
-        margin-left: -15px;
+        margin-left: -25%;
+        padding: 10px;
+        width: 100px;
+    }
+
+    #css{
+        margin-top: 2px;
     }
     
-    .container-grid .habilidades img:hover{
-        width: 110px;
+    #bootstrap{
+        margin-top: 2px;
+    }
+    
+    #js{
+        margin-top: 5px;
+    }
+    
+    #php{
+        margin-top: 5px;
     }
 
     .container .projects {
-        width: 100%;
+        margin-left: 0%;
         display: block;
-        margin-bottom: 5%;
-        text-align: center;
     }
-    .projects .card{
-        margin-left: 5%;
-    }
-    
 
+    .projects .card{
+        margin-bottom: 20px;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .projects img{
+        background-color: #703abb;
+        width: 100%;
+        height: 200px;
+    }
+
+    .container .btn-git{
+        width: 50%;
+        font-size: 20px;
+        margin-left: 25%;
+        margin-bottom: 10%;
+    }
+
+    .footer{
+        width: 100%;
+    }    
 }
 
 @media (min-width: 390px) and (max-width: 413px) {
