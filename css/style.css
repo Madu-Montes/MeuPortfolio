@@ -287,7 +287,7 @@ nav .menu-btn i {
     padding: 20px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50%;
+    grid-template-rows: 50% 50%;
     gap: 10px;
 }
 
@@ -301,20 +301,8 @@ nav .menu-btn i {
     transition: 0.5s;
 }
 
-#css{
-    margin-top: 7px;
-}
-
-#bootstrap{
-    margin-top: 7px;
-}
-
-#js{
-    margin-top: 7px;
-}
-
-#php{
-    margin-top: 7px;
+.habilidades img{
+    margin-bottom: 20px;
 }
 
 /*Projetos*/

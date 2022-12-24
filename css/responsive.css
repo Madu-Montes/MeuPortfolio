@@ -188,6 +188,11 @@
         font-size: 20px;
     }
 
+    .container-grid .habilidades img{
+        margin-top: 5%;
+        width: 130px;
+    }
+
     .projects .card{
         margin-left: 0%;
         width: 300px;
@@ -279,35 +284,16 @@
     }
 
     .container-grid .habilidades {
-        background-color: chocolate;
-        width: 90%;
-        margin-left: 0%;
-        height: 250px;
+        margin-left: 5%;
+        height: 350px;
         padding: 20px;
         display: grid;
         gap: 10px;
     }
 
     .container-grid .habilidades img{
-        margin-left: -25%;
-        padding: 10px;
-        width: 100px;
-    }
-
-    #css{
-        margin-top: 2px;
-    }
-    
-    #bootstrap{
-        margin-top: 2px;
-    }
-    
-    #js{
-        margin-top: 5px;
-    }
-    
-    #php{
-        margin-top: 5px;
+        margin-top: 5%;
+        width: 130px;
     }
 
     .container .projects {
@@ -422,35 +408,17 @@
     }
 
     .container-grid .habilidades {
-        background-color: chocolate;
-        width: 90%;
+        width: 100%;
         margin-left: 0%;
-        height: 250px;
+        height: 350px;
         padding: 20px;
         display: grid;
         gap: 10px;
     }
 
     .container-grid .habilidades img{
-        margin-left: -25%;
-        padding: 10px;
-        width: 100px;
-    }
-
-    #css{
-        margin-top: 2px;
-    }
-    
-    #bootstrap{
-        margin-top: 2px;
-    }
-    
-    #js{
-        margin-top: 5px;
-    }
-    
-    #php{
-        margin-top: 5px;
+        margin-top: 5%;
+        width: 120px;
     }
 
     .container .projects {
@@ -569,35 +537,17 @@
     }
 
     .container-grid .habilidades {
-        background-color: chocolate;
-        width: 90%;
+        width: 100%;
         margin-left: 0%;
-        height: 250px;
+        height: 350px;
         padding: 20px;
         display: grid;
         gap: 10px;
     }
 
     .container-grid .habilidades img{
-        margin-left: -25%;
-        padding: 10px;
-        width: 100px;
-    }
-
-    #css{
-        margin-top: 2px;
-    }
-    
-    #bootstrap{
-        margin-top: 2px;
-    }
-    
-    #js{
-        margin-top: 5px;
-    }
-    
-    #php{
-        margin-top: 5px;
+        margin-top: 5%;
+        width: 90px;
     }
 
     .container .projects {
@@ -701,34 +651,18 @@
     }
 
     .container-grid .habilidades {
-        width: 90%;
-        margin-left: 0%;
-        height: 250px;
+        width: 100%;
+        margin-left: -10%;
+        height: 350px;
         padding: 20px;
         display: grid;
-        gap: 10px;
+        gap: 20px;
     }
 
     .container-grid .habilidades img{
-        margin-left: -25%;
-        padding: 10px;
-        width: 100px;
-    }
-
-    #css{
-        margin-top: 2px;
-    }
-    
-    #bootstrap{
-        margin-top: 2px;
-    }
-    
-    #js{
-        margin-top: 5px;
-    }
-    
-    #php{
-        margin-top: 5px;
+        margin-top: 5%;
+        width: 90px;
+        margin-left: -45%;
     }
 
     .container .projects {
@@ -827,34 +761,17 @@
     }
 
     .container-grid .habilidades {
-        width: 90%;
+        width: 100%;
         margin-left: -10%;
-        height: 250px;
+        height: 350px;
         padding: 20px;
         display: grid;
-        gap: 10px;
+        gap: 20px;
     }
 
     .container-grid .habilidades img{
-        margin-left: -25%;
-        padding: 10px;
-        width: 100px;
-    }
-
-    #css{
-        margin-top: 2px;
-    }
-    
-    #bootstrap{
-        margin-top: 2px;
-    }
-    
-    #js{
-        margin-top: 5px;
-    }
-    
-    #php{
-        margin-top: 5px;
+        margin-top: 5%;
+        width: 90px;
     }
 
     .container .projects {
