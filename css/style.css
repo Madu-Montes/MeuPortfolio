@@ -72,7 +72,7 @@ nav .menu-btn i {
     }
 
     nav ul {
-        position: fixed;
+        position:absolute;
         top: 80px;
         left: -100%;
         background-color: black;
