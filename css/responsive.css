@@ -162,6 +162,14 @@
         margin-bottom: 10%;
     }
 
+    .right p{
+        font-size: 22px;
+    }
+
+    .left2 p{
+        font-size: 22px;
+    }
+
     .container-redes {
         margin-left: 35%;
     }
@@ -258,6 +266,14 @@
         gap: 30px;
     }
 
+    .right p{
+        font-size: 22px;
+    }
+
+    .left2 p{
+        font-size: 22px;
+    }
+
     .left2{
         margin-left: 0%;
     }
@@ -339,6 +355,10 @@
         margin-bottom: 5%;
     }
 
+    .title-home{
+        margin-top: 15%;
+    }
+
     .title-home h1{
         font-size: 65px;
     }
@@ -380,6 +400,14 @@
         margin-top: 27%;
         display: grid;
         gap: 30px;
+    }
+
+    .right p{
+        font-size: 20px;
+    }
+
+    .left2 p{
+        font-size: 20px;
     }
 
     .left2{
@@ -465,6 +493,10 @@
         margin-bottom: 5%;
     }
 
+    .title-home{
+        margin-top: 10%;
+    }
+
     .title-home h1{
         font-size: 55px;
     }
@@ -509,6 +541,14 @@
         margin-top: 27%;
         display: grid;
         gap: 30px;
+    }
+
+    .right p{
+        font-size: 20px;
+    }
+
+    .left2 p{
+        font-size: 20px;
     }
 
     .left2{
@@ -593,6 +633,10 @@
         margin-bottom: 5%;
     }
 
+    .title-home{
+        margin-top: 5%;
+    }
+
     .ilustra-eu{
         margin-bottom: 15%;
     }
@@ -623,11 +667,19 @@
     }
 
     .container-redes {
-        margin-left: 35%;
+        margin-left: 30%;
         width: 20%;
         margin-top: 27%;
         display: grid;
         gap: 30px;
+    }
+
+    .right p{
+        font-size: 20px;
+    }
+
+    .left2 p{
+        font-size: 20px;
     }
 
     .left2{
@@ -703,6 +755,10 @@
         margin-bottom: 5%;
     }
 
+    .title-home{
+        margin-top: 5%;
+    }
+
     .ilustra-eu{
         margin-bottom: 15%;
     }
@@ -738,6 +794,14 @@
         margin-top: 27%;
         display: grid;
         gap: 30px;
+    }
+
+    .right p{
+        font-size: 20px;
+    }
+
+    .left2 p{
+        font-size: 20px;
     }
 
     .left2{

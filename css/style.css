@@ -76,7 +76,7 @@ nav .menu-btn i {
         top: 80px;
         left: -100%;
         background-color: black;
-        height: 100vh;
+        height: 75vh;
         width: 100%;
         text-align: center;
         display: block;
@@ -96,10 +96,15 @@ nav .menu-btn i {
         font-size: 23px;
     }
 
-    nav ul li a.active,
+    nav ul li a.active{
+        background: none;
+        color: #6a00ff;
+    }
+
     nav ul li a:hover {
         background: none;
         color: #05ff12;
+        transition: 0,3s;
     }
 }
 
