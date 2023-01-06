@@ -72,7 +72,7 @@ nav .menu-btn i {
     }
 
     nav ul {
-        position:absolute;
+        position: absolute;
         top: 80px;
         left: -100%;
         background-color: black;
@@ -96,7 +96,7 @@ nav .menu-btn i {
         font-size: 23px;
     }
 
-    nav ul li a.active{
+    nav ul li a.active {
         background: none;
         color: #6a00ff;
     }
@@ -104,7 +104,7 @@ nav .menu-btn i {
     nav ul li a:hover {
         background: none;
         color: #05ff12;
-        transition: 0,3s;
+        transition: 0, 3s;
     }
 }
 
@@ -123,17 +123,17 @@ nav .menu-btn i {
     text-align: center;
 }
 
-.left h1{
+.left h1 {
     color: white;
     font-size: 55px;
     font-family: 'Poppins', sans-serif;
 }
 
-.title-home{
+.title-home {
     margin-top: 25%;
 }
 
-.left h2{
+.left h2 {
     color: #6200EE;
     font-size: 40px;
     margin-top: 3%;
@@ -141,7 +141,7 @@ nav .menu-btn i {
     font-weight: 200;
 }
 
-.left h3{
+.left h3 {
     color: white;
     font-weight: 200;
 }
@@ -153,7 +153,7 @@ nav .menu-btn i {
     margin-right: auto;
 }
 
-.animacao-home{
+.animacao-home {
     width: 330px;
     height: 330px;
     border: 2px solid #6200EE;
@@ -163,28 +163,30 @@ nav .menu-btn i {
     position: absolute;
 }
 
-.animacao-home::after{
+.animacao-home::after {
     content: "";
     width: 330px;
     height: 330px;
     border: 2px solid #0cc015;
     border-top: 4px solid #0bb914;
-   /* border-radius: 50%; Talvez eu tire*/
+    /* border-radius: 50%; Talvez eu tire*/
     border-bottom: 1px solid #05ff12;
     animation: animacao 10s linear infinite;
     position: absolute;
 }
 
-@keyframes animacao{
-    from{
+@keyframes animacao {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 
 }
-.ilustra-eu{
+
+.ilustra-eu {
     margin-bottom: 15%;
     display: block;
     margin-left: auto;
@@ -208,26 +210,27 @@ nav .menu-btn i {
     gap: 20px;
 }
 
-.redes svg{
+.redes svg {
     color: white;
 }
 
-.bi-github:hover{
+.bi-github:hover {
     box-shadow: 0px 0px 35px #6200EE, 0px 0px 15px #6300eed0 inset;
     text-shadow: 0 px 0px 10px #6200EE, 0px 0px 3px #6300eed0;
     border-radius: 50px;
     transition: box-shadow 0.1s;
 }
 
-.bi-linkedin:hover{
+.bi-linkedin:hover {
     box-shadow: 0px 0px 35px #6200EE, 0px 0px 15px #6300eed0 inset;
     text-shadow: 0 px 0px 10px #6200EE, 0px 0px 3px #6300eed0;
+    border-radius: 15px;
     transition: box-shadow 0.1s;
 }
 
 /*Sobre */
 
-.title{ 
+.title {
     text-align: center;
     color: white;
     margin-bottom: 5%;
@@ -235,22 +238,22 @@ nav .menu-btn i {
     font-family: 'Bebas Neue', cursive;
 }
 
-.eu img{
+.eu img {
     width: 70%;
 }
 
-.right h1{
+.right h1 {
     color: white;
     font-weight: 200;
 }
 
-.right p{
+.right p {
     margin-top: 3%;
     color: white;
     font-size: 18px;
 }
 
-.right .btn{
+.right .btn {
     margin-top: 5%;
     border: 1px solid rgba(131, 122, 122, 0.747);
     background-color: transparent;
@@ -263,26 +266,26 @@ nav .menu-btn i {
     letter-spacing: 1px;
 }
 
-.right .btn:hover{
+.right .btn:hover {
     border: 4px #05ff12;
     color: #05ff12;
-    box-shadow: 0px 0px 35px #05ff12, 0px 0px 15px #05ff1280 inset; 
+    box-shadow: 0px 0px 35px #05ff12, 0px 0px 15px #05ff1280 inset;
     text-shadow: 0 px 0px 10px #05ff12, 0px 0px 3px #05ff12;
 }
 
 /* Habilidades */
-  
-#habilidades{
+
+#habilidades {
     text-align: left;
     margin-top: 5%;
 }
 
-.left2{
+.left2 {
     margin-top: 10%;
     margin-left: 10%;
 }
 
-.left2 p{
+.left2 p {
     color: white;
     font-size: 18px;
 }
@@ -296,17 +299,17 @@ nav .menu-btn i {
     gap: 10px;
 }
 
-.container-grid .habilidades img{
+.container-grid .habilidades img {
     margin-top: 5%;
     width: 150px;
 }
 
-.container-grid .habilidades img:hover{
+.container-grid .habilidades img:hover {
     width: 170px;
     transition: 0.5s;
 }
 
-.habilidades img{
+.habilidades img {
     margin-bottom: 20px;
 }
 
@@ -320,39 +323,83 @@ nav .menu-btn i {
     text-align: center;
 }
 
-.projects .card{
+.projects .card {
     padding: 10px;
     width: 350px;
     height: 350px;
 }
 
-.projects img{
+.projects img {
     background-color: #703abb;
     width: 350px;
     height: 200px;
+    position: relative;
 }
 
-.card h3{
+.card img:hover {
+    filter: blur(5px);
+    transition: 0.3s;
+}
+
+.card h3 {
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
 }
-.card-body{
+
+.card a {
+    text-decoration: none;
+}
+
+.card .btn-proj{
+    background-color: black;
+    width: 40%;
+    height: 40px;
+    top: 100px;
+    right: 30%;
+    position: absolute;
+    display: none;
+}
+
+.card:hover .btn-proj{
+    display: block;
+    transition: 0.3s;
+}
+
+.card-body {
     margin-top: 10px;
 }
 
-.card a{
-    background-color: black;
-    margin-top: 5px;
+.card-body h4 {
+    font-size: 16px;
 }
 
-.card a:hover{
+.card:hover .btn
+
+/*
+.card-body a {
+    background-color: black;
+    width: 40%;
+    height: 40px;
+    top: 100px;
+    right: 30%;
+    position: absolute;
+}
+
+.card:hover h4{
+    display: block;
+    transition: 0.5s;
+}
+
+*/
+
+.card a:hover {
     box-shadow: 0px 0px 35px #6200EE, 0px 0px 15px #6300eed0 inset;
     text-shadow: 0 px 0px 10px #6200EE, 0px 0px 3px #6300eed0;
     transition: box-shadow 0.1s;
 }
 
-.container .btn-git{
+.container .btn-git {
     font-size: 18px;
     background-color: #6200EE;
     color: white;
@@ -363,7 +410,7 @@ nav .menu-btn i {
     margin-bottom: 5%;
 }
 
-.container .btn-git:hover{
+.container .btn-git:hover {
     color: white;
     font-size: 20px;
     transition: 0.5s;
@@ -371,34 +418,27 @@ nav .menu-btn i {
 
 /*footer */
 
-.footer{
+.footer {
     width: 100%;
     background-color: black;
     height: 220px;
 }
 
-.img-footer{
+.img-footer {
     color: rgba(255, 255, 255, 0.603);
     text-align: center;
 }
 
-.img-footer img{
+.img-footer img {
     width: 130px;
     margin-top: 5px;
 }
 
-.voltartopo a{
+.voltartopo a {
     color: #703abb;
     text-decoration: none;
 }
 
-.voltartopo a:hover{
+.voltartopo a:hover {
     color: #05ff12;
 }
-
-
-
-
-
-
-
