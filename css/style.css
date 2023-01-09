@@ -60,7 +60,7 @@ body {
     transition: 0.3s;
   }
   
-  @media (max-width: 999px) {
+  @media (max-width: 767px) {
     body {
       overflow-x: hidden;
     }
