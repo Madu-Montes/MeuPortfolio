@@ -374,26 +374,11 @@ nav .menu-btn i {
     font-size: 16px;
 }
 
-.card:hover .btn
-
-/*
-.card-body a {
-    background-color: black;
-    width: 40%;
-    height: 40px;
-    top: 100px;
-    right: 30%;
-    position: absolute;
+.card a .bi-github{
+    color: black;
 }
 
-.card:hover h4{
-    display: block;
-    transition: 0.5s;
-}
-
-*/
-
-.card a:hover {
+.btn-proj:hover {
     box-shadow: 0px 0px 35px #6200EE, 0px 0px 15px #6300eed0 inset;
     text-shadow: 0 px 0px 10px #6200EE, 0px 0px 3px #6300eed0;
     transition: box-shadow 0.1s;
