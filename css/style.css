@@ -273,6 +273,52 @@ nav .menu-btn i {
     text-shadow: 0 px 0px 10px #05ff12, 0px 0px 3px #05ff12;
 }
 
+/*Formação*/
+.formacao{
+    width: 90%;
+    margin-left: 5%;
+}
+
+#formacao {
+    text-align: left;
+    margin-top: 5%;
+}
+
+.left2 {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.left2 p {
+    color: white;
+    font-size: 18px;
+}
+
+.container-grid .formacao {
+    height: 500px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    gap: 10px;
+}
+
+.container-grid .formacao img {
+    margin-top: 5%;
+    margin-left: 50px;
+    width: 150px;
+}
+
+.container-grid .formacao img:hover {
+    width: 170px;
+    transition: 0.5s;
+}
+
+.formacao img {
+    margin-bottom: 20px;
+}
+
+
 /* Habilidades */
 
 #habilidades {
