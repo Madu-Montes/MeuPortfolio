@@ -362,6 +362,10 @@
         display: block;
     }
 
+    .projeto-infos{
+        height: 15rem;
+    }
+
     #btn-ver-mais {
         background-color: #6200EE;
         align-items: center;
@@ -450,6 +454,10 @@
 
     .box-projetos {
         display: block;
+    }
+
+    .projeto-infos{
+        height: 15rem;
     }
 
     #btn-ver-mais {
@@ -544,7 +552,7 @@
     }
 
     .projeto-infos{
-        height: 16rem;
+        height: 17rem;
     }
 
 
