@@ -338,7 +338,6 @@ nav{
 }
 
 .box-sobre img:hover{
-    width: 370px;
     margin-left: 50px;
     -webkit-box-shadow: 13px 13px 0px #60C03F;
     -moz-box-shadow:    13px 13px 0px #60C03F;
@@ -585,7 +584,7 @@ nav{
 }
 
 
-/*Scroll efeito animação*
+/*Scroll efeito animação*/
 .box-sobre img, .cursos-formacao, .habilidades, .box{
     visibility: hidden;
 }

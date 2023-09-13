@@ -3,6 +3,6 @@ function show(){
     document.querySelector('.navigation').classList.toggle('active')
 }
 
-windowsr = ScrollReveal({reset: true });
+window.sr = ScrollReveal({reset: true });
 
 sr.reveal('.box-sobre img , .cursos-formacao, .habilidades, .box', {duration: 1500});
