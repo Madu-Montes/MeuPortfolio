@@ -5,50 +5,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Dev Madu Montes</title>
+    <title>Dev | Madu Montes copia</title>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <header>
+        <ul>
+            <li> <a href="#" class="active">Home </a></li>
+            <li> <a href="#sobre">Sobre </a></li>
+            <li> <a href="#formacao">Formação </a></li>
+            <li> <a href="#habilidades">Habilidades </a></li>
+            <li> <a href="#projetos">Projetos </a></li>
+        </ul>
+    </header>
+
+    <div class="navigation">
+        <button class="hamburger" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
 
         <nav>
-            <img class="logo" src="./img/logo-atenas.png" alt="">
-            <div class="menu-btn">
-                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
-            </div>
             <ul>
-                <li> <a href="#" class="active">Home </a></li>
-                <li> <a href="#sobre">Sobre </a></li>
-                <li> <a href="#formacao">Formação </a></li>
-                <li> <a href="#habilidades">Habilidades </a></li>
-                <li> <a href="#projetos">Projetos </a></li>
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#sobre">Sobre </a></li>
+                <li><a href="#formacao">Formação </a></li>
+                <li><a href="#habilidades">Habilidades </a></li>
+                <li><a href="#projetos">Projetos </a></li>
             </ul>
         </nav>
     </div>
 
-
     <main>
-        <div class="container">
-            <div class="container-grid">
-                <div class="left title-home">
-                    <h1>Olá Mundo!</h1>
-                    <div class="titles">
-                        <h2>Madu Montes |</h2>
-                        <h3>DESENVOLVEDORA FRONT-END</h3>
+        <div class="container-grid">
+            <div class="left title-home">
+                <h1>Olá Mundo!</h1>
+                <div class="titles">
+                    <h2>Madu Montes |</h2>
+                    <h3>DESENVOLVEDORA FRONT-END</h3>
+                </div>
+            </div>
+            <div class="right-home">
+                <div class="animacao-home"></div>
+                <div class="ilustra-eu">
+                    <img src="./img/ilustra.jpg" alt="">
+                </div>
+                <div class="container-redes">
+                    <a target="_blank" href="https://github.com/Madu-Montes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/maria-eduarda-montes-28727322b/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-nichos">
+            <h1 id="sobre" class="titulo">Quem sou</h1>
+            <div class="box-sobre">
+                <img src="./img/linkedin.jfif" alt="">
+                <div class="texto-quemSou">
+                    <h2>São Paulo, capital</h2>
+                    <p>Conheci a programação em 2020 quando iniciei o curso técnico em DS, onde aprendi desde Web
+                        Design até fundamentos de Banco de Dados, porém só no fim do segundo ano me apaixonei pela
+                        área e desde então me interessei cada vez mais.
+                        Atualmente curso análise e desenvolvimento de sistemas na PUCRS, pesquisando muito e
+                        conhecendo vários nichos da área.</p>
+                    <a name="" id="" class="btn btn-dark" href="./img/curriculo.pdf" role="button"
+                        target="_blank">Currículo</a>
+                </div>
+            </div>
+
+
+            <div id="formacao" class="box-formacao">
+                <div class="texto-formacao">
+                    <h1 class="titulo">Formação</h1>
+                    <p>Sou técnica em Desenvolvimento de Sistemas pela <strong>Etec Jardim Ângela</strong> (2022) e
+                        atualmente curso Análise e Desenvolvimento de Sistemas pela <strong>PUCRS</strong>. Como
+                        extracurriculares realizei diversos cursos online para adquirir mais conhecimento, em
+                        plataformas como Curso em Vídeo, Fundação Bradesco, Rocketseat e Udemy.</p>
+                </div>
+                <div class="cursos-formacao">
+                    <img src="./img/bradesco.svg" alt="logo da fundação Bradesco">
+                    <img src="./img/cursoEmVideo.svg" alt="logo da Plataforma Curso em Vídeo">
+                    <img src="./img/udemy.svg" alt="logo da Udemy">
+                    <img src="./img/rocketseat.svg" alt="logo da Rocketseat">
+                </div>
+            </div>
+
+            <div id="habilidades" class="box-formacao">
+                <div class="habilidades">
+                    <img src="./img/html.png" alt="">
+                    <img src="./img/css.png" alt="">
+                    <img src="./img/javascript.png" alt="">
+                    <img src="./img/python.png" alt="">
+                    <img src="./img/figma.svg" alt="">
+                    <img src="./img/mysql.png" alt="">
+                    <img src="./img/git.svg" alt="">
+                    <img src="./img/github.svg" alt="">
+                    <img src="./img/bootstrap.png" alt="">
+                </div>
+                <div class="texto-habilidades">
+                    <h1 class="titulo">Habilidades</h1>
+                    <p>Tenho conhecimentos em <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Figma</strong> e
+                        <strong>Bootstrap</strong>, tecnologias que conheci durante meu curso técnico, além disso para
+                        expandir minhas habilidades estou estudando <strong>JavaScript</strong>, <strong>Phyton</strong>
+                        e <strong>MySql</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <h1 id="projetos" class="titulo">Projetos</h1>
+            <div class="box-projetos">
+                <div class="box">
+                    <img src="./img/netflix.png" alt="">
+                    <div class="projeto-infos">
+                        <div class="buttons-project">
+                            <a name="" id="" class="btn btn-primary" target="_blank"
+                                href="https://unrivaled-semifreddo-9b3456.netlify.app/" role="button">Ver projeto</a>
+                            <a target="_blank" href="https://github.com/Madu-Montes/Login_Netflix">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="descricao-projeto">
+                            <span>Clone Netflix</span>
+                            <p>Clone da tela de login da streaming Neflix, feita puramente em HTML e CSS.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="right-home">
-                    <div class="animacao-home"></div>
-                    <div class="ilustra-eu">
-                        <img src="./img/ilustra.jpg" alt="">
+                <div class="box">
+                    <img src="./img/formulario.png" alt="">
+                    <div class="projeto-infos">
+                        <div class="buttons-project">
+                            <a name="" id="" class="btn btn-primary" target="_blank"
+                                href="https://madu-montes.github.io/DevForm/" role="button">Ver projeto</a>
+                            <a target="_blank" href="https://github.com/Madu-Montes/DevForm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="descricao-projeto">
+                            <span>Formulário</span>
+                            <p>Formulário de login com validação de dados, feito com HTML e CSS, que valida as
+                                informaçãos de entrada.</p>
+                        </div>
                     </div>
-                    <div class="container-redes">
-                        <div class="redes">
+                </div>
+                <div class="box">
+                    <img src="./img/meusLinks.png" alt="">
+                    <div class="projeto-infos">
+                        <div class="buttons-project">
+                            <a name="" id="" class="btn btn-primary" target="_blank" href="https://dancing-sprinkles-31baac.netlify.app/" role="button">Ver
+                                projeto</a>
+                            <a target="_blank" href="https://github.com/Madu-Montes/MeuLinks">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="descricao-projeto">
+                            <span>Card de Contato</span>
+                            <p>Projeto desenvolvido na NLW da Rocketseat, com tecnologias HTML, CSS e Javascript.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./img/netflix.png" alt="">
+                    <div class="projeto-infos">
+                        <div class="buttons-project">
+                            <a name="" id="" class="btn btn-primary" target="_blank" href="#" role="button">Ver
+                                projeto</a>
                             <a target="_blank" href="https://github.com/Madu-Montes">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16">
@@ -57,177 +208,16 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="redes">
-                            <a target="_blank"
-                                href="https://www.linkedin.com/in/maria-eduarda-montes-28727322b/">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                                    class="bi bi-linkedin" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                                </svg>
-                            </a>
+                        <div class="descricao-projeto">
+                            <span>Título</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad ducimus nesciunt
+                                assumenda, temporibus velit!</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <h1 class="title" id="sobre">SOBRE</h1>
-            <div class="container-grid">
-                <div class="left">
-                    <div class="eu">
-                        <img src="./img/linkedin.jfif" alt="">
-                    </div>
-                </div>
-                <div class="right">
-                    <h1>São Paulo, Capital</h1>
-                    <p>Conheci a programação em 2020 quando iniciei o curso técnico em DS, onde aprendi desde Web Design
-                        até
-                        fundamentos de Banco de Dados, porém só no fim do segundo ano me apaixonei pela área e desde
-                        então
-                        me interessei cada vez mais. Tenho pesquisado muito e conhecido vários nichos da área e as que
-                        mais
-                        me interesso são Front-end e UI/UX Design.</p>
-
-                    <a name="" id="" class="btn btn-dark" href="./img/curriculo.pdf" role="button"
-                        target="_blank">Currículo</a>
-                </div>
-            </div>
-
-
-            
-            <div class="container-grid">
-                <div class="left">
-                    <div class="container-grid formacao">
-                        <div class="col-1">
-                            <img id="" src="./img/cursov.png" alt="Logo Curso em Vídeo">
-                            <img id="" src="./img/rocketseat.jpg" alt="Logo Rocketseat" style="margin-top: 40px;">
-                        </div>
-                        <div class="col-2">
-                            <img id="" src="./img/fb.png" alt="Logo Fundação Bradesco">
-                            <img id="Logo Udemy" src="./img/udemy.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <h1 class="title" id="formacao">FORMAÇÃO</h1>
-                    <p>Sou técnica em Desenvolvimento de Sistemas pela Etec Jardim Ângela (2022). Realizei diversos cursos online para adquirir mais conhecimento, em plataformas como <strong>Curso em Vídeo</strong>, <strong>Fundação Bradesco</strong>, <strong>Rocketseat</strong> e <strong>Udemy</strong>.</p>
-                </div>
-            </div>
-
-            <!--
-            <div class="container">
-                <div class="container-grid">
-                    <div class="left-formacao">
-                        <div class="container-grid formacao">
-                            <div class="col-1">
-                                <img id="" src="./img/cursov.png" alt="Logo Curso em Vídeo">
-                                <img id="" src="./img/rocketseat.jpg" alt="Logo Rocketseat">
-                            </div>
-                            <div class="col-2">
-                                <img id="" src="./img/fb.png" alt="Logo Fundação Bradesco">
-                                <img id="Logo Udemy" src="./img/udemy.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <h1 class="title" id="formacao">FORMAÇÃO</h1>
-                        <p>Sou técnica em Desenvolvimento de Sistemas pela Etec Jardim Ângela (2022). Realizei diversos cursos online para adquirir mais conhecimento, em plataformas como Curso em Vídeo, Fundação Bradesco, Rocketseat e Udemy.</p>
-                    </div>
-                </div>
-            </div>
-        -->
-            
-
-            <div class="container">
-                <div class="container-grid">
-                    <div class="left2">
-                        <h1 class="title" id="habilidades">O QUE SEI</h1>
-                        <p>Tenho conhecimentos em HTML5, CSS3, Figma e Bootstrap, tecnologias que conheci durante meu
-                            curso
-                            técnico,
-                            além disso para expadir minhas habilidades estou estudando JavaScript.</p>
-                    </div>
-                    <div class="right">
-                       <!--Subcoluna-->
-                        <div class="container-grid habilidades">
-                            <div class="col-1">
-                                <img id="html" src="./img/html.png" alt="">
-                                <img id="js" src="./img/javascript.png" alt="">
-                            </div>
-                            <div class="col-2">
-                                <img id=" css" src="./img/css.png" alt="">
-                                <img id="figma" src="./img/figma.png" alt="">
-                            </div>
-                            <div class="col-3">
-                                <img id="bootstrap" src="./img/bootstrap.png" alt="">
-                                <!--<img id="php" src="./img/php.png" alt="">-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h1 class="title" id="projetos">PROJETOS</h1>
-            <div class="container projects">
-                <div class="card">
-                    <img class="img-fluid img-top" src="./img/formulario.png" alt="">
-                    <div class="card-body">
-                        <a href="https://github.com/Madu-Montes/DevForm" target="_blank">
-                            <h3>Formulário</h3>
-                        </a>
-                        <h4>Formulário simples de login, com validação de dados realizada através do CSS3.</h4>
-                        <a name="" id="" class="btn btn-dark btn-proj" href="https://madu-montes.github.io/DevForm/#"
-                            role="button" target="_blank">Ver projeto</a>
-                        <a name="" id="" class="btn btn-dark btn-proj" href="https://madu-montes.github.io/DevForm/#"
-                            role="button" target="_blank">Ver projeto</a>
-                        <a target="_blank" href="https://github.com/Madu-Montes/DevForm"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="img-fluid img-top" src="./img/netflix.png" alt="">
-                    <div class="card-body">
-                        <a href="https://github.com/Madu-Montes/DevForm" target="_blank">
-                            <h3>Clone Login Netflix</h3>
-                        </a>
-                        <h4>Clone da tela de login da plataforma de streaming Netflix.<strong>Em
-                            desenvolvimento</strong>.</h4>
-                        <a name="" id="" class="btn btn-dark btn-proj" href="https://unrivaled-semifreddo-9b3456.netlify.app/"
-                            role="button" target="_blank">Ver projeto</a>
-                            <a target="_blank" href="https://github.com/Madu-Montes/Login_Netflix"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="img-fluid img-top" src="./img/fanpage.png" alt="">
-                    <div class="card-body">
-                        <a href="https://github.com/Madu-Montes/DevForm" target="_blank">
-                            <h3>Fanpage</h3>
-                        </a>
-                        <h4>Fanpage da Marvel desenvolvida com HTML5 CSS3 e Bootstrap. <strong>Em
-                                desenvolvimento</strong>.</h4>
-                        <a name="" id="" class="btn btn-dark btn-proj" href="https://madu-montes.github.io/DevForm/#"
-                            role="button" target="_blank">Ver projeto</a>
-                            <a target="_blank" href="https://madu-montes.github.io/DevForm/#"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a name="" id="" class="btn btn-git" href="https://github.com/Madu-Montes?tab=repositories" role="button"
-                target="_blank">Ver mais</a>
+            <a name="" id="btn-ver-mais" class="btn btn-primary" target="_blank"
+                href="https://github.com/Madu-Montes?tab=repositories" role="button">Ver mais</a>
         </div>
     </main>
     <footer>
@@ -247,7 +237,7 @@
         </div>
     </footer>
 
-    <script src="./js/menu.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

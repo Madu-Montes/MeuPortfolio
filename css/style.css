@@ -1,114 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
     background: rgb(0, 0, 0);
+    background-color: #000;
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(4, 4, 5, 1) 35%, rgba(56, 48, 80, 1) 100%);
     background-attachment: fixed;
     overflow-x: hidden;
+    cursor: default;
 }
 
-/*Menu*/
-
-nav {
+header {
     display: flex;
     height: 80px;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 100px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.logo {
-    width: 100px;
-}
-
-nav ul {
+header ul {
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
 
-nav ul li {
+header ul li {
     margin: 0 5px;
 }
 
-nav ul li a {
+header ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     padding: 8px 15px;
     border-radius: 25px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    background: #6200EE;
-    color: white;
+header ul li a.active,
+header ul li a:hover {
+    color: #05ff12;
 }
 
-nav .menu-btn i {
+header .menu-btn i {
     color: #fff;
     cursor: pointer;
     display: none;
 }
 
-/*responsividade do menu*/
-
-@media (max-width: 920px) {
-    nav .menu-btn i {
-        display: block;
-    }
-
-    nav ul {
-        position: absolute;
-        top: 80px;
-        left: -100%;
-        background-color: black;
-        height: 75vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-    }
-
-    nav ul.open {
-        left: 0;
-    }
-
-    nav ul li {
-        width: 100%;
-        margin: 50px 0;
-    }
-
-    nav ul li a {
-        font-size: 23px;
-    }
-
-    nav ul li a.active {
-        background: none;
-        color: #6a00ff;
-    }
-
-    nav ul li a:hover {
-        background: none;
-        color: #05ff12;
-        transition: 0, 3s;
-    }
+a,button{
+    cursor: pointer;
 }
 
-/*project*/
+nav{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 250px;
+}
+
+.navigation{
+    position: fixed;
+    right: -500px;
+    width: 350px;
+    height: 100%;
+    background-color: #000;
+    transition: .5s;
+    display: none;
+}
+
+.navigation ul li{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 20px 30px;
+}
+
+.navigation ul li a{
+    color: #fff;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-bottom: 1pt solid #252525;
+}
+
+.hamburger, .bar{
+    position: fixed;
+}
+
+.hamburger{
+    display: block;
+    top: 5%;
+    left: 90%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+}
+
+.bar{
+    top: 3px;
+    background: #000;
+    width: 100%;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+#bar2{
+    top: 11px;
+}
+
+#bar3{
+    top: 19px;
+}
+
+.navigation.active{
+    right: 0;
+}
+
+.hamburger.open #bar1{
+    background-color: #fff;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2{
+    background-color: transparent;
+}
+
+.hamburger.open #bar3{
+    background-color: #fff;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+/*Home*/
 
 .container-grid {
     padding: 20px;
@@ -200,18 +242,14 @@ nav .menu-btn i {
 }
 
 .container-redes {
-    margin-left: 50%;
-    width: 20%;
-    margin-top: 10%;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 90%;
+    justify-content: center;
+    display: flex;
     gap: 20px;
+    padding: 5px;
 }
 
-.redes svg {
-    color: white;
+.container-redes svg{
+    color:#fff ;
 }
 
 .bi-github:hover {
@@ -224,7 +262,6 @@ nav .menu-btn i {
 .bi-linkedin:hover {
     box-shadow: 0px 0px 35px #6200EE, 0px 0px 15px #6300eed0 inset;
     text-shadow: 0 px 0px 10px #6200EE, 0px 0px 3px #6300eed0;
-    border-radius: 15px;
     transition: box-shadow 0.1s;
 }
 
@@ -273,177 +310,250 @@ nav .menu-btn i {
     text-shadow: 0 px 0px 10px #05ff12, 0px 0px 3px #05ff12;
 }
 
-/*Formação*/
-.formacao{
-    width: 90%;
-    margin-left: 5%;
+/*Quem sou*/
+
+.container-nichos{
+    width: 80%;
+    margin: 10%;
+    padding-left:  2rem;
+    padding-right: 2rem;
+    border: 1px solid #6300eed0;
+    margin-bottom: 5rem;
 }
 
-#formacao {
-    text-align: left;
-    margin-top: 5%;
-}
-
-.left2 {
-    margin-top: 10%;
-    margin-left: 10%;
-}
-
-.left2 p {
-    color: white;
-    font-size: 18px;
-}
-
-.container-grid .formacao {
-    height: 500px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
-    gap: 10px;
-}
-
-.container-grid .formacao img {
-    margin-top: 5%;
-    margin-left: 50px;
-    width: 150px;
-}
-
-.container-grid .formacao img:hover {
-    width: 170px;
-    transition: 0.5s;
-}
-
-.formacao img {
-    margin-bottom: 20px;
-}
-
-
-/* Habilidades */
-
-#habilidades {
-    text-align: left;
-    margin-top: 5%;
-}
-
-.left2 {
-    margin-top: 10%;
-    margin-left: 10%;
-}
-
-.left2 p {
-    color: white;
-    font-size: 18px;
-}
-
-.container-grid .habilidades {
-    height: 500px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
-    gap: 10px;
-}
-
-.container-grid .habilidades img {
-    margin-top: 5%;
-    width: 150px;
-}
-
-.container-grid .habilidades img:hover {
-    width: 170px;
-    transition: 0.5s;
-}
-
-.habilidades img {
-    margin-bottom: 20px;
-}
-
-/*Projetos*/
-
-.container .projects {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    gap: 10px;
-    margin-bottom: 5%;
+.titulo{
+    margin: 30px auto;
+    font-size: 35px;
     text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.projects .card {
-    padding: 10px;
-    width: 350px;
-    height: 350px;
+.box-sobre img{
+    width: 370px;
+    margin-left: 50px;
+    -webkit-box-shadow: -13px -13px 0px #60C03F;
+    -moz-box-shadow:    -13px -13px 0px #60C03F;
+    box-shadow:         -13px -13px 0px #60C03F;
 }
 
-.projects img {
-    background-color: #703abb;
-    width: 350px;
-    height: 200px;
-    position: relative;
+.box-sobre img:hover{
+    width: 370px;
+    margin-left: 50px;
+    -webkit-box-shadow: 13px 13px 0px #60C03F;
+    -moz-box-shadow:    13px 13px 0px #60C03F;
+    box-shadow:         13px 13px 0px #60C03F;
 }
 
-.card img:hover {
-    filter: blur(5px);
-    transition: 0.3s;
+.box-sobre{
+    margin-bottom: 5rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
 }
 
-.card h3 {
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
+.texto-quemSou{
+    width: 90%;
+    height: 80%;
+    margin-top: 10%;
 }
 
-.card a {
-    text-decoration: none;
-}
-
-.card .btn-proj{
-    background-color: black;
-    width: 40%;
-    height: 40px;
-    top: 100px;
-    right: 30%;
-    position: absolute;
-    display: none;
-}
-
-.card:hover .btn-proj{
-    display: block;
-    transition: 0.3s;
-}
-
-.card-body {
-    margin-top: 10px;
-}
-
-.card-body h4 {
-    font-size: 16px;
-}
-
-.card a .bi-github{
-    color: black;
-}
-
-.btn-proj:hover {
-    box-shadow: 0px 0px 35px #6200EE, 0px 0px 15px #6300eed0 inset;
-    text-shadow: 0 px 0px 10px #6200EE, 0px 0px 3px #6300eed0;
-    transition: box-shadow 0.1s;
-}
-
-.container .btn-git {
+.texto-quemSou p{
     font-size: 18px;
-    background-color: #6200EE;
-    color: white;
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
 }
 
-.container .btn-git:hover {
-    color: white;
-    font-size: 20px;
+.texto-quemSou .btn {
+    margin-top: 5%;
+    border: 1px solid rgba(131, 122, 122, 0.747);
+    background-color: transparent;
+    color: rgba(131, 122, 122, 0.747);
+    border-radius: 10px;
+    font-size: 16px;
+    float: right;
+    margin-right: 2%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.texto-quemSou .btn:hover {
+    border: 4px #05ff12;
+    color: #05ff12;
+    box-shadow: 0px 0px 35px #05ff12, 0px 0px 15px #05ff1280 inset;
+    text-shadow: 0 px 0px 10px #05ff12, 0px 0px 3px #05ff12;
+}
+
+/*formação*/
+
+.box-formacao{
+    margin-bottom: 5rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+
+.cursos-formacao{
+    margin-left: 5rem;
+    background-color: #2F2D30;
+    width: 370px;
+    height: 370px;
+    padding: 40px;
+    -webkit-box-shadow: 13px -13px 0px #973FC0;
+    -moz-box-shadow:    13px -13px 0px #973FC0;
+    box-shadow:         13px -13px 0px #973FC0;
+}
+
+.cursos-formacao:hover{
+    -webkit-box-shadow: -13px 13px 0px #973FC0;
+    -moz-box-shadow:    -13px 13px 0px #973FC0;
+    box-shadow:         -13px 13px 0px #973FC0;
+    transition: 0.10s;
+}
+
+.cursos-formacao img{
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+}
+
+.texto-formacao{
+    width: 90%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 2rem
+}
+
+.texto-formacao p{
+    font-size: 18px;
+}
+
+/*habilidades */
+
+#formacao, #habilidades .titulo{
+    text-align: left;
+}
+
+.habilidades{
+    margin-left: 5rem;
+    background-color: #2F2D30;
+    width: 370px;
+    height: 370px;
+    padding: 70px;
+    -webkit-box-shadow: -13px -13px 0px #60C03F;
+    -moz-box-shadow:    -13px -13px 0px #60C03F;
+    box-shadow:         -13px -13px 0px #60C03F;
+}
+
+.habilidades:hover{
+    -webkit-box-shadow: 13px 13px 0px #60C03F;
+    -moz-box-shadow:    13px 13px 0px #60C03F;
+    box-shadow:         13px 13px 0px #60C03F;
+    transition: 0.10s;
+}
+
+.habilidades img{
+    width: 65px;
+    height: 65px;
+    margin: 3px;
+}
+
+.habilidades img:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 35px #05ff12, 0px 0px 15px #05ff1280 inset;
+}
+
+.texto-habilidades{
+    width: 90%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 2rem
+}
+
+.texto-habilidades p{
+    font-size: 18px;
+}
+
+/*projetos */
+.box-projetos{
+    display: grid;
+    grid-template-columns: 31rem 31rem;
+    margin-bottom: 5rem;
+    height: 100%;
+    align-items: center;
+}
+
+.box{
+    margin: 10px 10px;  
+}
+
+.projeto-infos{
+    border-bottom: 1px solid #ffffff62; 
+    height: 11rem;
+}
+
+.box:hover{
+    background-color: #000;
+    transition: 0.10s;
+}
+
+.box img{
+    width: 100%;
+}
+
+.buttons-project{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.buttons-project .btn-primary{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 150px;
+}
+
+.buttons-project .btn-primary:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+
+.buttons-project .bi-github{
+    background-color: #000;
+    border-radius: 30px;
+}
+
+.descricao-projeto{
+    padding: 10px;
+}
+
+.box p, span{
+    color: #fff;
+}
+
+.box span{
+    font-weight: bold;    
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#btn-ver-mais{
+    background-color: #6200EE;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 50px;
+    border: 1px solid #6200EE;
+}
+
+#btn-ver-mais:hover{
+    border: 1px solid #fff;
+    background-color: #000;
     transition: 0.5s;
 }
 
@@ -452,7 +562,7 @@ nav .menu-btn i {
 .footer {
     width: 100%;
     background-color: black;
-    height: 210px;
+    height: 220px;
 }
 
 .img-footer {
@@ -472,4 +582,10 @@ nav .menu-btn i {
 
 .voltartopo a:hover {
     color: #05ff12;
+}
+
+
+/*Scroll efeito animação*
+.box-sobre img, .cursos-formacao, .habilidades, .box{
+    visibility: hidden;
 }
