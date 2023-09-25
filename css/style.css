@@ -585,6 +585,6 @@ nav{
 
 
 /*Scroll efeito animação*/
-.box-sobre img, .cursos-formacao, .habilidades, .box{
+.box-sobre img, .cursos-formacao, .habilidades{
     visibility: hidden;
 }

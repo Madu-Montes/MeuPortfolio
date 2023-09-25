@@ -5,4 +5,4 @@ function show(){
 
 window.sr = ScrollReveal({reset: true });
 
-sr.reveal('.box-sobre img , .cursos-formacao, .habilidades, .box', {duration: 1500});
+sr.reveal('.box-sobre img , .cursos-formacao, .habilidades', {duration: 1500});
